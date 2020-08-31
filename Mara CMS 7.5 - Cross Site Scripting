@@ -2,7 +2,8 @@
 | # Title     : Mara CMS 7.5 Cross Site Scriping                                                                           |
 | # Author    : George Tsimpidas                                                                                           |                                                                                              
 | # Tested on : Kali Linux (X64)                                                                                           |                                                                                     |
-| # Vendor    : https://sourceforge.net/projects/maracms/                                                                  |                                                                                                         |
+| # Vendor    : https://sourceforge.net/projects/maracms/
+| # CVE       : CVE-2020-24223                                                                                                       |
 ============================================================================================================================
 
 Description : 

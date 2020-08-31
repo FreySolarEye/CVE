@@ -6,9 +6,16 @@
 | # CVE       : CVE-2020-24223                                                                                                       |
 ============================================================================================================================
 
-Description : 
+Mara CMS 7.5 suffers from a Reflected Cross Site Scripting vulnerability.
 
-The parameter contact.php?theme= is not sanitized properly, therefore is prone to Reflected XSS
+Description :
+
+
+ This Reflected XSS vulnerability allows any authenticated user to
+inject malicious code via the parameter contact.php?theme=<inject>.
+The vulnerability exists because the parameter is not properly
+sanitized and this can lead to malicious code injection that will be
+executed on the target’s browser.
 
 PoC
 

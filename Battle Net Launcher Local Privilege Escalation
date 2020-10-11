@@ -1,8 +1,8 @@
-# Exploit Title: Battle Net Launcher Folder/File Local Privilege Escalation
+# Exploit Title: Battle.Net 1.27.1.12428 Local Privilege Escalationn
 # Date: 10-09-2020
 # Exploit Author: George Tsimpidas
 # Software Link  : https://www.blizzard.com/en-gb/download/ ( Battle Net Desktop )
-# Version: 1.27.0 ( Patch ) 
+# Version Patch: 1.27.1.12428
 # Tested on: Microsoft Windows 10 Home 10.0.18362 N/A Build 18362
 # Category: local
 

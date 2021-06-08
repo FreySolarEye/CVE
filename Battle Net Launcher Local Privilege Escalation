@@ -18,7 +18,6 @@ being granted to the "Authenticated Users Group" which grants the (F) Flag aka "
 
 #PoC
 
-## Insecure Folder Permission
 
 C:\Program Files (x86)>icacls Battle.net
 

@@ -11,9 +11,9 @@
  Vulnerability Description:
 
 Gw2-64.exe  suffers from an elevation of
-privileges vulnerability which can be used by an "Authenticated User" to modify the 
+privileges vulnerability which can be used by an "Everyone" Group to modify the 
 existing executable file with a binary of his choice. The vulnerability exist due to weak set of permissions
-being granted to the "Authenticated Users Group" which grants the (F) Flag aka "Full Control"
+being granted to the "Eveyrone" which grants the (F) Flag aka "Full Control"
 
 
 # Local Privilege Escalation Proof of Concept

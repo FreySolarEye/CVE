@@ -10,8 +10,13 @@
 
  Vulnerability Description:
 
-#   Allows local low-privilege attacker to escalate privileges to admin via replacing the Battle.net.exe   file and restarting the computer where the malicious code will be executed as 'LocalSystem'
-on the next startup.
+
+Battle.net.exe  suffers from an elevation of
+privileges vulnerability which can be used by an "Authenticated User" to modify the 
+existing executable file with a binary of his choice. The vulnerability exist due to weak set of permissions
+being granted to the "Authenticated Users Group" which grants the (F) Flag aka "Full Control"
+
+#PoC
 
 ## Insecure Folder Permission
 

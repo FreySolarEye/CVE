@@ -1,0 +1,16 @@
+Description
+Razer 7.1 SURROUND SOUND Application with version 1.1.85 suffers from a DLL Hijacking Vulnerability. An attacker may exploit this vulnerability to use malicious Dynamic Link Libraries (DLL) to gain privilege escalation on the client Windows system. The installer loads the DLL and runs the malicious code that could grant administrative privileges to the attacker.
+
+Steps to Reproduce
+Open procmon and apply the aforementioned filters :
+ProcessName is = rzappengine.exe
+Result is = NAME NOT FOUND
+Path ends with = .dll
+
+Opening up the application and taking a deeper look you’ll spot that the application requests a missing dll under the path “C:\Users\currentuser\AppData\Local\Razer\RzAppEngine\User Data\Apps\SurroundSound\ncrypt.dll”
+Move your malicious ncrypt.dll inside the abovementioned folder
+Restart the client and you’ll be granted with a Hello World
+As a Proof of Concept i will include a screenshot which executes the Hello Wolrd uppon execution. And i will also include the Hello-World.dll
+
+Remediation
+The optimal method for preventing DLL hijacking starts with software developers who can indicate the exact location of all DLL files to keep Windows from using the default DLL search path protocol.

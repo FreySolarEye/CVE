@@ -9,8 +9,8 @@ Path ends with = .dll
 
 Opening up the application and taking a deeper look you’ll spot that the application requests a missing dll under the path “C:\Users\currentuser\AppData\Local\Razer\RzAppEngine\User Data\Apps\SurroundSound\ncrypt.dll”
 Move your malicious ncrypt.dll inside the abovementioned folder
-Restart the client and you’ll be granted with a Hello World
-As a Proof of Concept i will include a screenshot which executes the Hello Wolrd uppon execution. And i will also include the Hello-World.dll
+Restart the client and the .dll should be axecuted accordingly.
+
 
 Remediation
 The optimal method for preventing DLL hijacking starts with software developers who can indicate the exact location of all DLL files to keep Windows from using the default DLL search path protocol.

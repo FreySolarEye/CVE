@@ -128,7 +128,7 @@ def clean_server(openeclass):
     print(f"{GREEN}Server cleaned successfully!{RESET}")
 
 def main():
-    parser = argparse.ArgumentParser(description="Open eClass – CVE-2024-26503: Unrestricted File Upload Leads to Remote Code Execution")
+    parser = argparse.ArgumentParser(description="Open eClass – CVE-N/A: Unrestricted File Upload Leads to Remote Code Execution")
     parser.add_argument('-u', '--username', required=True, help="Username for login")
     parser.add_argument('-p', '--password', required=True, help="Password for login")
     parser.add_argument('-e', '--eclass', required=True, help="Base URL of the Open eClass")

@@ -5,7 +5,7 @@
 # Software Link: https://download.openeclass.org/files/3.15/
 # Version: 3.15 (2024)
 # Tested on: Debian Kali (Apache/2.4.57, PHP 8.2.12, MySQL 15.1)
-# CVE : N/A - Waiting for advisory
+# CVE : CVE-2024-31777
 # GUnet OpenEclass <= 3.15 E-learning platform - Unrestricted File Upload via ZIP Functionality
 
  
@@ -128,7 +128,7 @@ def clean_server(openeclass):
     print(f"{GREEN}Server cleaned successfully!{RESET}")
 
 def main():
-    parser = argparse.ArgumentParser(description="Open eClass – CVE-N/A: Unrestricted File Upload Leads to Remote Code Execution")
+    parser = argparse.ArgumentParser(description="Open eClass – CVE-CVE-2024-31777: Unrestricted File Upload Leads to Remote Code Execution")
     parser.add_argument('-u', '--username', required=True, help="Username for login")
     parser.add_argument('-p', '--password', required=True, help="Password for login")
     parser.add_argument('-e', '--eclass', required=True, help="Base URL of the Open eClass")

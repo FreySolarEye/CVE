@@ -1,0 +1,18 @@
+# Exploit Title:  GUnet OpenEclass E-learning platform 3.15 - 'certbadge.php' Stored Cross Site Scripting	
+# Date: 2024-14-04
+# Exploit Author: Georgios Tsimpidas 
+# Vendor Homepage: https://www.openeclass.org/
+# Software Link: https://download.openeclass.org/files/3.15/
+# Version: 3.15 (2024)
+# Tested on: Debian Kali (Apache/2.4.57, PHP 8.2.12, MySQL 15.1)
+# CVE : N/A
+# GUnet OpenEclass <= 3.15 E-learning platform - Stored Cross Site Scripting 
+
+Proof Of Concept: 
+
+1. Login as administartor
+2. Go under the endpoint of: http://localhost/openeclass/modules/admin/certbadge.php?action=edit_badge
+3. Enter on the title or Description the payload of <script>alert(document.cookie)</script>
+4. Save it
+
+An alert should prompt with the user's cookie session. 
